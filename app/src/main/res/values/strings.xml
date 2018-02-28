@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Demo_LoadingDialog</string>
+    <string name="btn_text_loading">文字-LoadingDialog</string>
+    <string name="btn_img_loading">圖片-LoadingDialog</string>
+    <string name="btn_drawable_loading">Drawable-LoadingDialog</string>
+    <string name="dialog_text_loading">現正載入中</string>
+</resources>
