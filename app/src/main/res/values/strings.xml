@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Demo_LoadingDialog</string>
+    <string name="btn_circle_progress_loading">圓環進度條-LoadingDialog</string>
+    <string name="btn_progress_loading">水平進度條-LoadingDialog</string>
     <string name="btn_text_loading">文字-LoadingDialog</string>
     <string name="btn_img_loading">圖片-LoadingDialog</string>
     <string name="btn_drawable_loading">Drawable-LoadingDialog</string>
     <string name="dialog_text_loading">現正載入中</string>
+
+    <string name="toast_progress_updated">(水平長形)更新已完成</string>
+    <string name="toast_circle_progress_updated">(環形)更新已完成</string>
+
 </resources>

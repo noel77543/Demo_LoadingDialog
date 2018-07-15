@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--loading progress bar-->
+    <color name="loading_bar_bg">#726658</color>
+    <color name="loading_bar_progress">#f22c2c</color>
+
+
 </resources>
