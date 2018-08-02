@@ -27,6 +27,7 @@ public class LoadingProgressCircleDialog extends Dialog {
         progressBar = new ProgressBar(context, null, android.R.attr.progressBarStyleHorizontal);
         setContentView(progressBar);
         progressBar.setProgressDrawable(context.getResources().getDrawable(R.drawable.layer_list_circle_loading));
+        progressBar.setSecondaryProgress(max);
         progressBar.setMax(max);
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     }
