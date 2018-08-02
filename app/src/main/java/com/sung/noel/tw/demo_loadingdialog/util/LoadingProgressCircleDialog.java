@@ -18,14 +18,15 @@ import butterknife.ButterKnife;
  */
 
 public class LoadingProgressCircleDialog extends Dialog {
-    @BindView(R.id.progress_bar)
-    ProgressBar progressBar;
+
+    private ProgressBar progressBar;
     private OnUpdateCompleteListener onUpdateCompleteListener;
 
     public LoadingProgressCircleDialog(@NonNull Context context, int max) {
         super(context);
-        setContentView(R.layout.dialog_progress_circle);
-        ButterKnife.bind(this);
+        progressBar = new ProgressBar(context, null, android.R.attr.progressBarStyleHorizontal);
+        setContentView(progressBar);
+        progressBar.setProgressDrawable(context.getResources().getDrawable(R.drawable.layer_list_circle_loading));
         progressBar.setMax(max);
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     }
@@ -43,6 +44,7 @@ public class LoadingProgressCircleDialog extends Dialog {
             onUpdateCompleteListener.onUpdateCompleted();
         }
     }
+
     //------
     public void setOnUpdateCompleteListener(OnUpdateCompleteListener onUpdateCompleteListener) {
         this.onUpdateCompleteListener = onUpdateCompleteListener;

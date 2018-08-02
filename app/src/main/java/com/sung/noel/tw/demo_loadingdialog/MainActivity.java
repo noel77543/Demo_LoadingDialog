@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
         loadingDrawableCircleDialog = new LoadingDrawableCircleDialog(this);
         loadingTextDialog = new LoadingTextDialog(this);
 
-        loadingProgressDialog = new LoadingProgressDialog(this, 10);
+        loadingProgressDialog = new LoadingProgressDialog(this, 100);
         loadingProgressDialog.setOnUpdateCompleteListener(this);
         loadingProgressDialog.setOnDismissListener(this);
 
-        loadingProgressCircleDialog = new LoadingProgressCircleDialog(this, 10);
+        loadingProgressCircleDialog = new LoadingProgressCircleDialog(this, 100);
         loadingProgressCircleDialog.setOnUpdateCompleteListener(this);
         loadingProgressCircleDialog.setOnDismissListener(this);
         handler = new Handler();
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
                     loadingProgressDialog.updateProgress(progress);
 
                 }
-                handler.postDelayed(this, 1000);
+                handler.postDelayed(this, 100);
             }
         };
 
